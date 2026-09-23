@@ -28,7 +28,7 @@ app.set('views',  'views');
 
 // where to find static files - css, images, js
 // this needs to be uncommented so that the css file can be found and used in the layout.hbs file
-//app.use(express.static('public'));
+app.use(express.static('public'));
 
 // home page or home route
 app.get('/', (req, res) => {
@@ -50,6 +50,30 @@ app.get('/contact', (req, res) => {
     head={title:"Contact - Week 1"}
     res.render('contact', { state, head});
     console.log('contact')
+  });
+
+  // pricing route
+app.get('/pricing', (req, res) => {
+    state={pricing : true}
+    head={title:"Pricing - Week 1"}
+    res.render('pricing', { state, head});
+    console.log('pricing')
+  });
+
+  //programs route
+app.get('/programs', (req, res) => {
+    state={programs : true}
+    head={title:"Programs - Week 1"}
+    res.render('programs', { state, head});
+    console.log('programs')
+  });
+
+ //index route
+app.get('/index', (req, res) => {
+    state={index : true}
+    head={title:"Index - Week 1"}
+    res.render('index', { state, head});
+    console.log('index')
   });
 
 

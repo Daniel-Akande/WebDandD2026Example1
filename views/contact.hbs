@@ -1,9 +1,43 @@
-<main>
-    <h1>Contact</h1>
-    <p>This is content on the contact page. Can you change it to give
-        your own contact deails. It has changed.
-        
+  <main>
+        <section>
+            <h2 style="text-align: center;">Contact Information</h2>
+            <p style="text-align: center;">To contact us use one of the following:</p>
+            <p style="text-align: center;">Email address: atlastraining@gmail.com</p>
+            <p style="text-align: center;">Phone number: +353 089 576 9923</p>
 
-        ldsafjdsaflkdsajkf
-        </p>
-</main>
+            <form action="contacts.html" method="get">
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+
+                <label for="subject">Subject: <span class="required">*</span></label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="membership">Membership</option>
+                    <option value="personal-training">Personal Training</option>
+                    <option value="classes">Classes</option>
+                </select>
+
+                <label for="message">Message: <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Your message here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <h3 style="text-align: center;">Find Us</h3>
+           <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37280.18957853511!2d-8.52192948225486!3d54.268367927962004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee9b5677caee9%3A0xa00c7a997317380!2sSligo!5e0!3m2!1sen!2sie!4v1775133965091!5m2!1sen!2sie"
+                class="map"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </section>
+    </main>
